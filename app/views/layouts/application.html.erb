@@ -2,13 +2,23 @@
 <html>
 <head>
   <title>Rstore</title>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
-  <%= javascript_include_tag "application" %>
+  <%= stylesheet_link_tag    "rstore", :media => "all" %>
+  <%= javascript_include_tag :defaults %>
   <%= csrf_meta_tags %>
 </head>
-<body>
-
-<%= yield %>
-
+<body id="store" >
+	<div id="banner">
+    	<%= image_tag("rails.png") %>
+    	<%= @page_title || "Rails training" %>
+	</div>
+	<div id="columns">
+		<div id="side">
+			<a href="/">Home</a><br />
+			<a href="/products/">Products</a><br />
+		</div>
+		<div id="main">
+			<%= yield %>
+    	</div>
+  	</div>
 </body>
 </html>
