@@ -13,8 +13,11 @@
 	</div>
 	<div id="columns">
 		<div id="side">
-			<a href="/">Home</a><br />
-			<a href="/products/">Products</a><br />
+          <div id="cart">
+            <%= render @cart %>
+          </div>
+	      <a href="/">Home</a><br />
+	      <a href="/products/">Products</a><br />
 		</div>
 		<div id="main">
 			<%= yield %>
