@@ -1,5 +1,5 @@
 set :application, 'rstore'
-set :domain, 'rstore.tpindel.pl'
+set :domain, 'localhost'
 set :repository,  "git@github.com:tpindel/rstore.git"
 set :deploy_to, "/home/#{application}"
 
